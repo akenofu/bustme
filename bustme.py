@@ -92,11 +92,11 @@ def main():
     parser.add_argument('-v','--verbose', help='Enable verbose output',action="store_true",default=False)
     parser.add_argument('-t','--threads', help='Threads to use , Default is 10',default=10)
     args=parser.parse_args()
-    if(not args.url) and (not args.url) and (not args.wordlist):
-        print('''The -h -u -w arguments are mandatory
+    if not( args.url and args.url and args.wordlist):
+        print('''The -u URL -s STRING -w WORDLIST arguments are mandatory
         
 Example:
-    python3 bustme.py -u http://localhost:3000 -s '<title>OWASP Juice Shop</title>' -w /root/wordlist.txt)
+    python3 bustme.py -u http://localhost:3000 -s '<title>OWASP Juice Shop</title>' -w /root/wordlist.txt
         ''')
         parser.print_usage()
         exit()
