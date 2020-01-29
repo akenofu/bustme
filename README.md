@@ -6,6 +6,7 @@
 
 ## Installation:
 > git clone https://github.com/akenofu/bustme.git
+
 > cd bustme
 
 ## Usage
