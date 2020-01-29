@@ -5,7 +5,8 @@ During my venture to conquer another vulnerable web application OWASP Juice Shop
 #bustme is A Directory brute forcing tool that assesses pages according to the returned response body. If it contains a strings defined in the page of redirection then the request was redirected. If the text doesnot exist then this is most likely a new page.
 
 ##Installation:
-> git clone ....
+> git clone https://github.com/akenofu/bustme.git
+> cd bustme
 
 ##usage
 >python3 bustme.py -u http://localhost:3000 -s '<title>OWASP Juice Shop</title>' -w /root/wordlist.txt
